@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <style>
+
+            *, link:visited, link:active
+            {
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+                text-decoration: none;
+                color: #000;
+				box-sizing: border-box;
+            }
+
+            .clearBoth { clear: both; }
+
+            .boxOrganizer1 .box,
+            .boxOrganizer2 .box,
+            .boxOrganizer3 .box,
+            .boxOrganizer4 .box
+            {
+                height: 100px;
+                border: 1px solid #fff;
+                background-color: #000;
+                float: left;
+            }
+
+            .boxOrganizer1 .box { width: calc(100%/3); }
+            .boxOrganizer2 .box { width: calc(100%/4); }
+            .boxOrganizer3 .box { width: calc(100%/9); }
+            
+            .boxOrganizer4 
+            { 
+                width: 80vw;
+                margin-left: auto;
+                margin-right: auto; 
+            }
+
+            .boxOrganizer4 .box { width: calc(100%/5); }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="boxOrganizer1">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="clearBoth"></div>
+        </div>
+
+        <div class="boxOrganizer2">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="clearBoth"></div>
+        </div>
+
+        <div class="boxOrganizer3">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="clearBoth"></div>
+        </div>
+
+        <div class="boxOrganizer4">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="clearBoth"></div>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <style>
+
+            *, link:visited, link:active
+            {
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+                text-decoration: none;
+                color: #000;
+				box-sizing: border-box;
+            }
+
+            .staticList
+            {
+                max-width: 300px;
+                font-family: Arial, Helvetica, sans-serif
+            }
+
+            .staticList label
+            {
+                display: block;
+                width: 100%;
+                padding: 15px 0 15px 0;
+                background-color: rgb(0, 119, 255);
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                border-left: 1px solid rgb(216, 216, 216);
+                border-right: 1px solid rgb(216, 216, 216);
+                border-radius: 5px 5px 0 0;
+            }
+
+            .staticList li
+            {
+                width: 100%;
+                padding: 10px 0 10px 0;
+                background-color: rgb(248, 248, 248);
+                text-align: center;
+                border-left: 1px solid rgb(216, 216, 216);
+                border-right: 1px solid rgb(216, 216, 216);
+                border-bottom: 1px solid rgb(216, 216, 216);
+                cursor: pointer;
+                transition-duration: 0.5s;
+            }
+
+            .staticList li:hover
+            {
+                background-color: rgb(211, 211, 211);
+                transition-duration: 0.5s;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div class="staticList">
+
+            <label>Static list</label>
+            <ul>
+                <a href=""><li> Second option </li></a>
+                <a href=""><li> Third option </li></a>
+                <a href=""><li> Fourth option </li></a>
+                <a href=""><li> Fifth option </li></a>
+                <a href=""><li> Sixth option </li></a>
+                <a href=""><li> Seventh option </li></a>
+            </ul>
+        </div>
+
+    </body>
+
+</html>

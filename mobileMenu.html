@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <style>
+
+            *, link:visited, link:active
+            {
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+                text-decoration: none;
+                color: #000;
+				box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .mobileMenu
+            {
+                max-width: 700px;
+            }
+
+            .mobileMenu label
+            {
+                display: block;
+                width: 100%;
+                padding: 15px 0 15px 0;
+                background-color: rgb(41, 127, 255);
+                color: #fff;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .mobileMenu li
+            {
+                display: block;
+                width: 100%;
+                padding: 10px 0 10px 0;
+                background-color: rgb(243, 243, 243);
+                color: #2c2c2c;
+                text-align: center;
+            }
+
+            .mobileMenu li:hover
+            {
+                display: block;
+                width: 100%;
+                padding: 10px 0 10px 0;
+                background-color: rgb(216, 216, 216);
+                color: #2c2c2c;
+                text-align: center;
+            }
+
+            .mobileMenu li { display: none; }
+            .mobileMenu:focus li { display: block; }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <!-- tabindex enable the :focus property for div -->
+        <div class="mobileMenu" tabindex="0">
+
+            <label>Mobile Menu - no JavaScript</label>
+            <ul>
+                <a href="https://google.com" target="_blank"><li> Google </li></a>
+                <a href="https://youtube.com" target="_blank"><li> Youtube </li></a>
+                <a href=""><li> Third option </li></a>
+                <a href=""><li> Fourth option </li></a>
+                <a href=""><li> Fifth option </li></a>
+                <a href=""><li> Sixth option </li></a>
+            </ul>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <style>
+
+            *
+            {
+                border: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .clearBoth { clear: both; }
+
+            .boxOrganizer
+            {
+                width: 30%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30vh;
+            }
+
+            .boxOrganizer div[class="box"]:nth-child(1) { background-color: #d3d3d3; }
+            .boxOrganizer div[class="box"]:nth-child(2) { background-color: #b6b6b6; }
+            .boxOrganizer div[class="box"]:nth-child(3) { background-color: #b6b6b6; }
+            .boxOrganizer div[class="box"]:nth-child(4) { background-color: #d3d3d3; }
+
+            .box
+            {
+                width: calc(100%/2);
+                height: 100px;
+                float: left;
+                transition-duration: 1s;
+            }
+
+            .box:hover
+            {
+                transition-duration: 1s;
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+
+            .box:hover .tooltipOrganizer
+            {
+                display: inline;
+            }
+
+            .tooltipOrganizer 
+            { 
+                position: relative;
+                bottom: 50px;
+                left: 5px;
+                display: none;
+            }
+            
+            .tooltipBox
+            { 
+                display: inline-block;
+                padding: 10px;
+                background-color: rgb(238, 238, 238);
+                border-radius: 8px;
+                border: 1px solid rgb(172, 172, 172);
+            }
+
+            .tooltipArrow
+            {
+                width: 10px;
+                height: 10px;
+                border-right: 1px solid rgb(172, 172, 172);
+                border-bottom: 1px solid rgb(172, 172, 172);
+                background-color: rgb(238, 238, 238);
+                transform: rotate(45deg);
+                position: relative;
+                bottom: 5px;
+                left: 6px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="boxOrganizer">
+            <div class="box">
+                <div class="tooltipOrganizer">
+                    <div class="tooltipBox">Ala ma kota.</div>
+                    <div class="tooltipArrow"></div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="tooltipOrganizer">
+                    <div class="tooltipBox">Jacek ma psa.</div>
+                    <div class="tooltipArrow"></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="tooltipOrganizer">
+                    <div class="tooltipBox">Basia ma rybkę.</div>
+                    <div class="tooltipArrow"></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="tooltipOrganizer">
+                    <div class="tooltipBox">Franek ma żółwia, psa, kota, rybę i kaca.</div>
+                    <div class="tooltipArrow"></div>
+                </div>
+            </div>
+
+            <div class="clearBoth"></div>
+        </div>
+
+        <script>
+
+            document.getElementById("przycisk").addEventListener("click", function () {
+                var bgcolor = this.style.backgroundColor;
+                if (bgcolor == "red") this.style.backgroundColor = "white";
+                else this.style.backgroundColor = "red";
+            })
+
+        </script>
+
+    </body>
+    
+</html>

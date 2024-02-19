@@ -17,28 +17,33 @@
 
             .boxOrganizer
             {
-                width: 30%;
+                width: 25%;
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 30vh;
             }
 
-            .boxOrganizer div[class="box"]:nth-child(1) { background-color: #d3d3d3; }
-            .boxOrganizer div[class="box"]:nth-child(2) { background-color: #b6b6b6; }
-            .boxOrganizer div[class="box"]:nth-child(3) { background-color: #b6b6b6; }
-            .boxOrganizer div[class="box"]:nth-child(4) { background-color: #d3d3d3; }
+            .boxOrganizer div[class="box"]:nth-child(1) { background-color: #ffbfb3; }
+            .boxOrganizer div[class="box"]:nth-child(1):hover { background-color: #ff846e; }
+            .boxOrganizer div[class="box"]:nth-child(2) { background-color: #b4ffad; }
+            .boxOrganizer div[class="box"]:nth-child(2):hover { background-color: #94ff8b; }
+            .boxOrganizer div[class="box"]:nth-child(3) { background-color: #9ed8ff; }
+            .boxOrganizer div[class="box"]:nth-child(3):hover { background-color: #6ac4ff; }
+            .boxOrganizer div[class="box"]:nth-child(4) { background-color: #feffb1; }
+            .boxOrganizer div[class="box"]:nth-child(4):hover { background-color: #fdff79; }
 
             .box
             {
-                width: calc(100%/2);
+                width: calc(100%/2 - 10px);
                 height: 100px;
                 float: left;
-                transition-duration: 1s;
+                transition-duration: 0.5s;
+                margin: 5px;
             }
 
             .box:hover
             {
-                transition-duration: 1s;
+                transition-duration: 0.5s;
                 transform: scale(1.05);
                 cursor: pointer;
             }
@@ -60,9 +65,10 @@
             { 
                 display: inline-block;
                 padding: 10px;
-                background-color: rgb(238, 238, 238);
+                background-color: rgba(238, 238, 238, 0.61);
                 border-radius: 8px;
                 border: 1px solid rgb(172, 172, 172);
+                color: rgb(87, 87, 87);
             }
 
             .tooltipArrow
@@ -71,7 +77,7 @@
                 height: 10px;
                 border-right: 1px solid rgb(172, 172, 172);
                 border-bottom: 1px solid rgb(172, 172, 172);
-                background-color: rgb(238, 238, 238);
+                background-color: rgba(238, 238, 238, 0.61);
                 transform: rotate(45deg);
                 position: relative;
                 bottom: 5px;
@@ -108,23 +114,13 @@
 
             <div class="box">
                 <div class="tooltipOrganizer">
-                    <div class="tooltipBox">Franek ma żółwia, psa, kota, rybę i kaca.</div>
+                    <div class="tooltipBox">Franek ma żółwia, psa, kota, rybkę.</div>
                     <div class="tooltipArrow"></div>
                 </div>
             </div>
 
             <div class="clearBoth"></div>
         </div>
-
-        <script>
-
-            document.getElementById("przycisk").addEventListener("click", function () {
-                var bgcolor = this.style.backgroundColor;
-                if (bgcolor == "red") this.style.backgroundColor = "white";
-                else this.style.backgroundColor = "red";
-            })
-
-        </script>
 
     </body>
     
